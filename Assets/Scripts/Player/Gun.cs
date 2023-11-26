@@ -1,4 +1,4 @@
-﻿using Player.Bullet;
+﻿using Player.BulletScripts;
 using UnityEngine;
 
 namespace Player
