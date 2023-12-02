@@ -1,11 +1,13 @@
 ﻿using Player.BulletScripts;
 using UnityEngine;
+using VContainer;
 
 namespace Player
 {
     public class Player : MonoBehaviour
     {
-        private IBullet _bullet = new Bullet(7);
+        //private IBullet _bullet = new Bullet(7);
+        [Inject] private IBullet _bullet;
         
         private IBullet Bullet { get; set; }
 
