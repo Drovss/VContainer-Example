@@ -1,4 +1,4 @@
-﻿namespace Player.BulletScripts
+﻿namespace Players.BulletScripts
 {
     public class Bullet : IBullet
     {

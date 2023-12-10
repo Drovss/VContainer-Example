@@ -1,16 +1,23 @@
-﻿using Player.BulletScripts;
+﻿using Core;
+using Players.BulletScripts;
 using UnityEngine;
+using VContainer;
 
-namespace Player
+namespace Players
 {
     public class Player : MonoBehaviour
     {
-        private IBullet _bullet = new Bullet(7);
+        //private IBullet _bullet = new Bullet(7);
+        [Inject] private IBullet _bullet;
         
-        private IBullet Bullet { get; set; }
+        [Inject] private ClassA a;
+        
+        
+        [Inject] private IBullet Bullet { get; set; }
 
         private Gun _gun;
 
+        [Inject]
         private void Construct(IBullet bullet)
         {
             _bullet = bullet;
@@ -18,7 +25,8 @@ namespace Player
 
         private void Start()
         {
-            _gun = new Gun(_bullet);
+            
+            _gun = new Gun(a.Bullet2);
             
             Fire(_gun);
         }
