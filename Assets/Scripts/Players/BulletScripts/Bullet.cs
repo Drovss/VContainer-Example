@@ -1,6 +1,6 @@
 ﻿namespace Players.BulletScripts
 {
-    public class Bullet : IBullet
+    public class Bullet : IBullet, ISpeed
     {
         private readonly int _damage;
 
@@ -13,5 +13,9 @@
         {
             return _damage;
         }
+    }
+
+    public interface ISpeed
+    {
     }
 }

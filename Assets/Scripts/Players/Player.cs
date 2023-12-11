@@ -1,5 +1,6 @@
 ﻿using Players.BulletScripts;
 using UnityEngine;
+using VContainer;
 
 namespace Players
 {
@@ -11,6 +12,7 @@ namespace Players
 
         private Gun _gun;
 
+        [Inject]
         private void Construct(IBullet bullet)
         {
             _bullet = bullet;
