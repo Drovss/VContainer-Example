@@ -1,7 +1,7 @@
-﻿using Player.BulletScripts;
+﻿using Players.BulletScripts;
 using UnityEngine;
 
-namespace Player
+namespace Players
 {
     public class Player : MonoBehaviour
     {

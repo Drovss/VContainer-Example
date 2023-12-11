@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Player.BulletScripts
+namespace Players.BulletScripts
 {
     public class BulletSupper : IBullet
     {
